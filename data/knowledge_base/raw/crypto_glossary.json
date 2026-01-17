@@ -1,0 +1,140 @@
+{
+  "category": "Crypto Glossary",
+  "documents": [
+    {
+      "id": "glossary_001",
+      "title": "Altcoin",
+      "content": "Altcoin is short for 'alternative coin' - any cryptocurrency other than Bitcoin. The term emerged in early crypto days when Bitcoin dominated. Today, thousands of altcoins exist including major ones like Ethereum, Cardano, and Solana. Altcoins can be categorized as platform tokens (Ethereum), stablecoins (USDC), exchange tokens (BNB), privacy coins (Monero), and meme coins (Dogecoin). Some offer technological improvements over Bitcoin like faster transactions or smart contracts. Others serve specific niches or communities.",
+      "metadata": {
+        "source": "Cryptocurrency Terminology",
+        "entities": ["altcoin", "alternative coin", "Bitcoin", "cryptocurrency categories"]
+      }
+    },
+    {
+      "id": "glossary_002",
+      "title": "HODL",
+      "content": "HODL originated from a misspelled 'hold' in a 2013 Bitcoin forum post and became a meme meaning to hold cryptocurrency through volatility rather than sell. It's backronymed as 'Hold On for Dear Life'. HODLers believe in long-term value appreciation despite short-term price swings. The strategy contrasts with active trading. Crypto culture embraces HODL as a philosophy and badge of conviction. Terms like 'diamond hands' (strong holders) and 'paper hands' (weak sellers) extend this concept.",
+      "metadata": {
+        "source": "Crypto Culture",
+        "entities": ["HODL", "hold", "diamond hands", "paper hands", "long-term investing"]
+      }
+    },
+    {
+      "id": "glossary_003",
+      "title": "FOMO and FUD",
+      "content": "FOMO (Fear Of Missing Out) describes anxiety about missing profitable opportunities, often causing investors to buy during price rallies at local tops. FUD (Fear, Uncertainty, and Doubt) refers to spreading negative information to manipulate market sentiment downward. Both are powerful psychological forces in crypto markets known for volatility. Recognizing FOMO and FUD helps investors make rational decisions. 'FUDsters' deliberately spread FUD, while 'shillers' promote projects with exaggerated claims. Critical thinking and research combat both.",
+      "metadata": {
+        "source": "Market Psychology",
+        "entities": ["FOMO", "FUD", "market sentiment", "psychology", "shilling"]
+      }
+    },
+    {
+      "id": "glossary_004",
+      "title": "Whale",
+      "content": "Whales are individuals or entities holding large amounts of cryptocurrency capable of influencing market prices through their trades. For Bitcoin, addresses holding 1,000+ BTC are often considered whales. Whale watching involves tracking large addresses and their movements. When whales accumulate (buy), it may signal bullish sentiment. Distribution (selling) may indicate bearishness. Flash crashes can occur when whales dump large holdings. Some whales are early adopters, others are institutions or exchanges. Whale activity is monitored through on-chain analytics tools.",
+      "metadata": {
+        "source": "Market Participants",
+        "entities": ["whale", "large holder", "market manipulation", "on-chain analytics", "accumulation"]
+      }
+    },
+    {
+      "id": "glossary_005",
+      "title": "Satoshi",
+      "content": "A Satoshi (sat) is the smallest unit of Bitcoin, named after Bitcoin's creator Satoshi Nakamoto. One Bitcoin equals 100 million Satoshis (1 BTC = 100,000,000 sats). As Bitcoin's price increased, pricing in Satoshis became practical for small amounts. For example, if 1 BTC = $50,000, then 1 sat = $0.0005. Lightning Network transactions often use Satoshi denomination. The term honors the pseudonymous creator's contribution. Similar subunits exist for other cryptocurrencies (Gwei for Ethereum, Lovelace for Cardano).",
+      "metadata": {
+        "source": "Cryptocurrency Units",
+        "entities": ["Satoshi", "sat", "Bitcoin unit", "Satoshi Nakamoto", "denomination"]
+      }
+    },
+    {
+      "id": "glossary_006",
+      "title": "Rugpull",
+      "content": "A rugpull is a scam where developers abandon a project and run away with investors' funds. Common in DeFi, developers create a token, build hype, attract liquidity, then drain the liquidity pool or sell their holdings, crashing the price to near zero. Signs include anonymous teams, unlocked liquidity, concentrated token ownership, and unrealistic promises. Hard rugpulls involve malicious code enabling fund theft. Soft rugpulls are developers slowly selling holdings. Due diligence, contract audits, and checking liquidity locks help avoid rugpulls. Squid Game token (2021) was a notorious example.",
+      "metadata": {
+        "source": "Crypto Scams",
+        "entities": ["rugpull", "scam", "exit scam", "liquidity drain", "DeFi scam"]
+      }
+    },
+    {
+      "id": "glossary_007",
+      "title": "Gas Wars",
+      "content": "Gas wars occur when multiple users compete to have their transactions processed first by offering higher gas fees. Common during NFT mints, token launches, or high-value arbitrage opportunities. Users bid up gas prices, sometimes to hundreds or thousands of dollars per transaction. Failed transactions still consume gas, leading to wasted fees. Gas wars demonstrate Ethereum's scalability challenges. Layer 2 solutions and alternative chains aim to reduce gas war frequency. Bots often win gas wars through sophisticated automation and direct miner connections.",
+      "metadata": {
+        "source": "Ethereum Network Dynamics",
+        "entities": ["gas war", "gas fee", "NFT mint", "transaction priority", "network congestion"]
+      }
+    },
+    {
+      "id": "glossary_008",
+      "title": "Airdrop",
+      "content": "Airdrops are free token distributions to wallet addresses, often as marketing, rewards, or protocol launch strategies. Projects airdrop tokens to early users, community members, or holders of specific assets. Famous airdrops include Uniswap's UNI token (400 UNI to each user, worth $1,200+ at peak). Retroactive airdrops reward past users. Farmers perform specific actions hoping for future airdrops. Some airdrops require claims, others appear automatically. Scam airdrops exist that request wallet permissions to drain funds. Legitimate airdrops never ask for private keys or payments.",
+      "metadata": {
+        "source": "Token Distribution",
+        "entities": ["airdrop", "free tokens", "UNI airdrop", "retroactive", "airdrop farming"]
+      }
+    },
+    {
+      "id": "glossary_009",
+      "title": "Degen",
+      "content": "Degen, short for 'degenerate gambler,' describes traders who take high risks on speculative investments, often in meme coins or unaudited DeFi protocols. Self-identified degens embrace risky strategies like aping into new tokens, providing liquidity to unvetted pools, or using high leverage. Degen culture celebrates wins and accepts losses as part of the game. While sometimes profitable, degen strategies often lead to significant losses. The term is used both self-deprecatingly by participants and critically by conservative investors. Degen communities thrive on crypto Twitter and Discord.",
+      "metadata": {
+        "source": "Crypto Trading Culture",
+        "entities": ["degen", "degenerate", "high risk", "meme coin", "ape", "speculation"]
+      }
+    },
+    {
+      "id": "glossary_010",
+      "title": "Tokenomics",
+      "content": "Tokenomics combines 'token' and 'economics,' describing a cryptocurrency's economic model. Key aspects include total supply (fixed or infinite), distribution (ICO, mining, airdrops), allocation (team, investors, community), vesting schedules, inflation rate, burn mechanisms, and utility. Good tokenomics align incentives between users, developers, and investors. Bitcoin has deflationary tokenomics (21M cap, halvings). Ethereum post-EIP-1559 has variable supply (issuance vs burns). Many altcoins have high team allocations raising centralization concerns. Analyzing tokenomics helps assess long-term value and sustainability.",
+      "metadata": {
+        "source": "Crypto Economics",
+        "entities": ["tokenomics", "supply", "distribution", "vesting", "burn", "inflation"]
+      }
+    },
+    {
+      "id": "glossary_011",
+      "title": "ATH and ATL",
+      "content": "ATH (All-Time High) is the highest price an asset has ever reached. ATL (All-Time Low) is the lowest price. These are psychological levels that influence investor behavior. Breaking ATH often signals strong momentum and attracts FOMO. Buying near ATL can be contrarian opportunity or 'catching a falling knife' depending on fundamentals. Bitcoin's ATH reached nearly $69,000 in November 2021. Different ATHs exist in different currency pairs (BTC/USD vs BTC/EUR). Projects track ATH market cap, user counts, and other metrics beyond price.",
+      "metadata": {
+        "source": "Trading Terminology",
+        "entities": ["ATH", "ATL", "all-time high", "all-time low", "price milestone"]
+      }
+    },
+    {
+      "id": "glossary_012",
+      "title": "Bull Market and Bear Market",
+      "content": "Bull markets are sustained periods of rising prices and optimism. Bulls expect prices to go up. Bull runs in crypto can see 10x-100x gains but also feature high volatility and scams. Bear markets are prolonged downturns with pessimism. Bears expect prices to decline. Crypto bear markets often see 80%+ drops from peaks and can last years ('crypto winter'). These cycles historically follow Bitcoin halving patterns. Accumulation happens in bear markets, euphoria in bull markets. Identifying cycle phases helps timing, though prediction is difficult. Dead cat bounces are temporary recoveries in bear trends.",
+      "metadata": {
+        "source": "Market Cycles",
+        "entities": ["bull market", "bear market", "crypto winter", "market cycle", "accumulation", "euphoria"]
+      }
+    },
+    {
+      "id": "glossary_013",
+      "title": "To the Moon",
+      "content": "'To the moon' and rocket emojis express belief that an asset's price will dramatically increase. The phrase became central to crypto culture, especially in meme coin communities. 'When moon?' and 'When Lambo?' (When will I afford a Lamborghini?) are related expressions. While often used humorously, it reflects genuine hopes for life-changing gains. Critics see it as promoting unrealistic expectations and FOMO. The phrase predates crypto (stock market origins) but found a home in speculative crypto culture. Variations include 'moon mission,' 'moonshot,' and 'mooning.'",
+      "metadata": {
+        "source": "Crypto Slang",
+        "entities": ["to the moon", "moon", "Lambo", "price increase", "speculation", "meme culture"]
+      }
+    },
+    {
+      "id": "glossary_014",
+      "title": "Cold Storage vs Hot Wallet",
+      "content": "Cold storage refers to keeping private keys completely offline, safe from hackers. Hardware wallets (Ledger, Trezor) are common cold storage. Paper wallets store keys on physical paper. Cold storage is essential for large holdings but inconvenient for frequent trading. Hot wallets are connected to the internet for easy access - mobile apps, browser extensions (Metamask), exchange accounts. Hot wallets are convenient but vulnerable to hacks. Best practice is cold storage for savings, hot wallet for spending money. 'Not your keys, not your coins' reminds users to self-custody rather than leave funds on exchanges.",
+      "metadata": {
+        "source": "Cryptocurrency Security",
+        "entities": ["cold storage", "hot wallet", "hardware wallet", "Ledger", "Trezor", "private key security"]
+      }
+    },
+    {
+      "id": "glossary_015",
+      "title": "51% Attack",
+      "content": "A 51% attack occurs when an entity controls over 50% of a blockchain's mining power (PoW) or staked tokens (PoS), enabling them to manipulate the blockchain. Attackers could double-spend coins, prevent transactions, or reverse transactions. However, they cannot steal coins from wallets or create coins out of thin air. Such attacks are extremely expensive on major blockchains like Bitcoin, where the required hardware and electricity would cost billions. Smaller chains are more vulnerable. Successful 51% attacks have occurred on Bitcoin Gold, Ethereum Classic, and other smaller networks. The threat underscores the importance of decentralization.",
+      "metadata": {
+        "source": "Blockchain Security Threats",
+        "entities": ["51% attack", "double-spend", "hash rate", "network security", "centralization risk"]
+      }
+    }
+  ]
+}

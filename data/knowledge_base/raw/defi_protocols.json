@@ -1,0 +1,95 @@
+{
+  "category": "DeFi",
+  "documents": [
+    {
+      "id": "defi_001",
+      "title": "DeFi Introduction",
+      "content": "Decentralized Finance (DeFi) refers to financial services built on blockchain technology, primarily Ethereum, that operate without traditional intermediaries like banks. DeFi applications use smart contracts to create protocols for lending, borrowing, trading, earning interest, and more. Users maintain custody of their funds and interact with protocols directly through their wallets. DeFi exploded in popularity during 'DeFi Summer' 2020. Key advantages include permissionless access, transparency, composability (protocols can interact), and 24/7 availability. Total Value Locked (TVL) in DeFi peaked at over $180 billion in 2021.",
+      "metadata": {
+        "source": "DeFi Overview",
+        "entities": ["DeFi", "decentralized finance", "smart contract", "TVL", "permissionless"]
+      }
+    },
+    {
+      "id": "defi_002",
+      "title": "Decentralized Exchanges (DEXs)",
+      "content": "Decentralized exchanges allow users to trade cryptocurrencies directly from their wallets without a centralized intermediary. Uniswap pioneered the Automated Market Maker (AMM) model where liquidity pools replace order books. Users provide liquidity by depositing token pairs and earn fees from trades. Uniswap, SushiSwap, and PancakeSwap are popular AMM DEXs. Other models include order book DEXs like dYdX and aggregators like 1inch that route trades across multiple DEXs for best prices. DEXs offer better privacy and self-custody but can have higher fees and slippage than centralized exchanges.",
+      "metadata": {
+        "source": "DEX Guide",
+        "entities": ["DEX", "Uniswap", "AMM", "liquidity pool", "SushiSwap", "slippage"]
+      }
+    },
+    {
+      "id": "defi_003",
+      "title": "Liquidity Pools and AMMs",
+      "content": "Automated Market Makers use mathematical formulas to price assets instead of order books. The most common formula is Uniswap's constant product formula: x * y = k, where x and y are token quantities in a pool and k is constant. When someone trades, they add one token and remove another, changing the price according to the formula. Liquidity providers (LPs) deposit equal values of both tokens and receive LP tokens representing their share. LPs earn a portion of trading fees (typically 0.3% on Uniswap). However, LPs face impermanent loss - when token prices diverge, LPs may have less value than simply holding the tokens.",
+      "metadata": {
+        "source": "AMM Mathematics",
+        "entities": ["AMM", "constant product", "liquidity provider", "LP token", "impermanent loss"]
+      }
+    },
+    {
+      "id": "defi_004",
+      "title": "Lending and Borrowing Protocols",
+      "content": "DeFi lending platforms like Aave, Compound, and MakerDAO allow users to lend crypto assets and earn interest, or borrow against collateral. Lenders deposit assets into pools and receive interest-bearing tokens (like aTokens on Aave or cTokens on Compound). Borrowers must over-collateralize - depositing more value than they borrow to prevent default. Interest rates adjust algorithmically based on supply and demand. If collateral value drops below required levels, positions are liquidated. Flash loans are a unique DeFi innovation allowing uncollateralized loans that must be repaid within one transaction block.",
+      "metadata": {
+        "source": "DeFi Lending Guide",
+        "entities": ["Aave", "Compound", "MakerDAO", "lending", "collateral", "flash loan", "liquidation"]
+      }
+    },
+    {
+      "id": "defi_005",
+      "title": "Stablecoins",
+      "content": "Stablecoins are cryptocurrencies designed to maintain a stable value, typically pegged to the US dollar. Centralized stablecoins like USDC (Circle) and USDT (Tether) are backed by fiat reserves held by companies. Decentralized stablecoins like DAI (MakerDAO) are backed by crypto collateral in smart contracts. Algorithmic stablecoins attempt to maintain peg through supply adjustments, though many like TerraUSD have failed catastrophically. Stablecoins are crucial for DeFi as they provide price stability for trading, lending, and as a unit of account. They represent over $150 billion in market capitalization as of 2025.",
+      "metadata": {
+        "source": "Stablecoin Analysis",
+        "entities": ["stablecoin", "USDC", "USDT", "DAI", "MakerDAO", "peg", "TerraUSD"]
+      }
+    },
+    {
+      "id": "defi_006",
+      "title": "Yield Farming",
+      "content": "Yield farming involves moving crypto assets between different DeFi protocols to maximize returns. Farmers might provide liquidity on a DEX, stake LP tokens in a yield farm, borrow against deposits, or participate in multiple protocols simultaneously. Yields come from trading fees, interest, and protocol token rewards. Annual Percentage Yield (APY) can range from 5% to over 100%, though high yields often indicate high risk. Yield aggregators like Yearn Finance automate this process. Risks include smart contract bugs, impermanent loss, and token price volatility. The term originated during DeFi Summer 2020.",
+      "metadata": {
+        "source": "Yield Farming Strategies",
+        "entities": ["yield farming", "APY", "Yearn Finance", "liquidity mining", "DeFi Summer"]
+      }
+    },
+    {
+      "id": "defi_007",
+      "title": "Governance Tokens",
+      "content": "Governance tokens give holders voting rights over protocol decisions and parameters. Examples include UNI (Uniswap), AAVE (Aave), and COMP (Compound). Token holders can vote on proposals like fee changes, new features, treasury spending, and protocol upgrades. Voting power is typically proportional to tokens held. Some protocols use delegation where holders can delegate voting power to others. Governance tokens often have additional utility like fee discounts or revenue sharing. Progressive decentralization is common - protocols start centralized and gradually transfer control to token holders.",
+      "metadata": {
+        "source": "DeFi Governance",
+        "entities": ["governance token", "UNI", "AAVE", "COMP", "voting", "DAO", "delegation"]
+      }
+    },
+    {
+      "id": "defi_008",
+      "title": "DeFi Risks and Security",
+      "content": "DeFi carries significant risks beyond traditional finance. Smart contract vulnerabilities can be exploited, as seen in numerous hacks totaling billions in losses. Reentrancy attacks, flash loan attacks, oracle manipulation, and logic bugs are common attack vectors. Economic risks include impermanent loss, liquidation cascades, and token price volatility. Regulatory uncertainty poses legal risks. Front-running and MEV (Maximal Extractable Value) can disadvantage retail users. Users should verify contracts are audited, start with small amounts, understand protocol mechanics, and never invest more than they can afford to lose. Insurance protocols like Nexus Mutual offer coverage against some risks.",
+      "metadata": {
+        "source": "DeFi Security Analysis",
+        "entities": ["smart contract risk", "reentrancy", "flash loan attack", "oracle", "MEV", "audit", "Nexus Mutual"]
+      }
+    },
+    {
+      "id": "defi_009",
+      "title": "Decentralized Derivatives",
+      "content": "DeFi derivatives platforms offer futures, options, and perpetual swaps without centralized intermediaries. Perpetual protocols like dYdX and GMX allow leveraged trading of crypto assets. Synthetix enables synthetic assets (Synths) that track real-world assets like stocks, commodities, and fiat currencies. Options protocols like Dopex and Lyra offer on-chain options trading. These platforms use oracles for price feeds and smart contracts for settlement. Benefits include 24/7 trading, permissionless access, and transparency. However, complexity and smart contract risks are higher than spot trading.",
+      "metadata": {
+        "source": "DeFi Derivatives Guide",
+        "entities": ["derivatives", "perpetual swap", "dYdX", "Synthetix", "options", "leverage", "oracle"]
+      }
+    },
+    {
+      "id": "defi_010",
+      "title": "Real World Assets in DeFi",
+      "content": "Real World Assets (RWAs) bring traditional assets like real estate, bonds, and invoices onto blockchain through tokenization. Platforms like MakerDAO accept tokenized Treasury bills as collateral for DAI. Centrifuge tokenizes invoices and real estate. RWAs aim to bridge traditional finance with DeFi, offering stable yields backed by real assets rather than crypto volatility. Challenges include legal frameworks, custody of physical assets, valuation, and default management. RWAs could unlock trillions in value for DeFi but require solving regulatory and operational complexities. This is seen as a major growth area for DeFi beyond purely crypto-native assets.",
+      "metadata": {
+        "source": "RWA in DeFi",
+        "entities": ["RWA", "Real World Assets", "tokenization", "Centrifuge", "Treasury bills", "MakerDAO"]
+      }
+    }
+  ]
+}

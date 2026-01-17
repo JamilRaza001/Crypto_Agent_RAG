@@ -1,0 +1,97 @@
+{
+  "category": "Bitcoin",
+  "documents": [
+    {
+      "id": "btc_001",
+      "title": "Bitcoin Whitepaper Summary",
+      "content": "Bitcoin is a peer-to-peer electronic cash system proposed by Satoshi Nakamoto in 2008. It enables online payments to be sent directly from one party to another without going through a financial institution. The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. Bitcoin solves the double-spending problem using a peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions.",
+      "metadata": {
+        "source": "Bitcoin Whitepaper",
+        "author": "Satoshi Nakamoto",
+        "year": 2008,
+        "entities": ["Bitcoin", "blockchain", "proof-of-work", "Satoshi Nakamoto"]
+      }
+    },
+    {
+      "id": "btc_002",
+      "title": "Bitcoin Mining Explained",
+      "content": "Bitcoin mining is the process of adding transaction records to Bitcoin's public ledger called the blockchain. Miners use specialized hardware called ASICs (Application-Specific Integrated Circuits) to solve complex mathematical problems. When a miner successfully solves a problem, they create a new block and are rewarded with newly minted bitcoins plus transaction fees. This process is called proof-of-work. The difficulty of mining adjusts every 2016 blocks (approximately two weeks) to maintain a consistent block time of about 10 minutes.",
+      "metadata": {
+        "source": "Bitcoin Technical Documentation",
+        "entities": ["mining", "blockchain", "ASIC", "proof-of-work", "block reward"]
+      }
+    },
+    {
+      "id": "btc_003",
+      "title": "Bitcoin Halving Events",
+      "content": "Bitcoin halving is an event that occurs approximately every four years (every 210,000 blocks) where the block reward given to miners is cut in half. The first halving occurred in 2012, reducing the reward from 50 BTC to 25 BTC. The second halving in 2016 reduced it to 12.5 BTC, and the third in 2020 reduced it to 6.25 BTC. The most recent halving in April 2024 reduced the reward to 3.125 BTC. This mechanism controls Bitcoin's inflation rate and ensures that only 21 million bitcoins will ever exist. Halvings are significant events that historically have impacted Bitcoin's price.",
+      "metadata": {
+        "source": "Bitcoin Economics",
+        "entities": ["halving", "block reward", "21 million cap", "scarcity"]
+      }
+    },
+    {
+      "id": "btc_004",
+      "title": "Bitcoin Transactions",
+      "content": "A Bitcoin transaction is a transfer of value between Bitcoin wallets that gets included in the blockchain. Each transaction has inputs (previous outputs being spent) and outputs (new destinations for the bitcoins). Transactions are signed with private keys to prove ownership. Once broadcast to the network, transactions are verified by nodes and included in blocks by miners. A transaction typically requires 6 confirmations (6 blocks) to be considered fully confirmed and irreversible. Transaction fees are paid to miners and vary based on network congestion and transaction size in bytes.",
+      "metadata": {
+        "source": "Bitcoin Protocol Specification",
+        "entities": ["transaction", "wallet", "private key", "confirmation", "transaction fee"]
+      }
+    },
+    {
+      "id": "btc_005",
+      "title": "Bitcoin Nodes and Network",
+      "content": "Bitcoin operates on a peer-to-peer network of nodes. Full nodes download and verify the entire blockchain, enforcing all of Bitcoin's rules. They relay transactions and blocks to other nodes, maintaining network security and decentralization. Light nodes (SPV - Simplified Payment Verification) only download block headers and verify transactions relevant to them. As of 2025, there are approximately 15,000-17,000 reachable Bitcoin full nodes worldwide. Running a full node contributes to network security and allows users to independently verify transactions without trusting third parties.",
+      "metadata": {
+        "source": "Bitcoin Network Architecture",
+        "entities": ["node", "full node", "SPV", "peer-to-peer", "decentralization"]
+      }
+    },
+    {
+      "id": "btc_006",
+      "title": "Bitcoin Addresses and Wallets",
+      "content": "A Bitcoin address is a string of alphanumeric characters used to receive bitcoins. Addresses are derived from public keys using cryptographic hashing. There are several address formats: Legacy (P2PKH starting with '1'), SegWit (P2SH starting with '3'), and Native SegWit/Bech32 (starting with 'bc1'). A Bitcoin wallet is software that manages your private keys and addresses. Wallets can be hot (connected to internet) or cold (offline for security). Hardware wallets like Ledger and Trezor provide secure cold storage. It's crucial to backup wallet seed phrases as they allow recovery of funds.",
+      "metadata": {
+        "source": "Bitcoin Wallet Guide",
+        "entities": ["address", "wallet", "private key", "public key", "seed phrase", "SegWit"]
+      }
+    },
+    {
+      "id": "btc_007",
+      "title": "Bitcoin Security Model",
+      "content": "Bitcoin's security relies on cryptographic principles and economic incentives. The SHA-256 hashing algorithm secures blocks and addresses. The Elliptic Curve Digital Signature Algorithm (ECDSA) secures transactions. Bitcoin's proof-of-work makes attacking the network economically infeasible - an attacker would need to control more than 50% of the network's hash rate (a 51% attack). As of 2025, this would require hundreds of billions of dollars in hardware and electricity. The decentralized nature of thousands of nodes makes Bitcoin resistant to censorship and single points of failure.",
+      "metadata": {
+        "source": "Bitcoin Security Analysis",
+        "entities": ["SHA-256", "ECDSA", "51% attack", "hash rate", "cryptography"]
+      }
+    },
+    {
+      "id": "btc_008",
+      "title": "Bitcoin Scaling Solutions",
+      "content": "Bitcoin's base layer can process approximately 7 transactions per second, which led to the development of scaling solutions. The Lightning Network is a layer-2 solution that enables instant, low-cost payments by creating payment channels between users. SegWit (Segregated Witness), activated in 2017, increased block capacity by separating signature data. Taproot, activated in 2021, improved privacy and smart contract functionality. Other proposed solutions include sidechains like Liquid Network for faster settlements between exchanges and businesses.",
+      "metadata": {
+        "source": "Bitcoin Scaling Technologies",
+        "entities": ["Lightning Network", "SegWit", "Taproot", "layer-2", "sidechain", "Liquid"]
+      }
+    },
+    {
+      "id": "btc_009",
+      "title": "Bitcoin Mempool",
+      "content": "The mempool (memory pool) is where unconfirmed Bitcoin transactions wait before being included in a block. Each node maintains its own mempool. When network activity is high, the mempool grows and transaction fees increase as users compete for limited block space. Miners typically prioritize transactions with higher fee rates (satoshis per byte). Users can check mempool size to estimate appropriate fees and confirmation times. When the mempool is congested, low-fee transactions may remain unconfirmed for hours or days.",
+      "metadata": {
+        "source": "Bitcoin Transaction Processing",
+        "entities": ["mempool", "transaction fee", "fee rate", "confirmation time", "satoshi"]
+      }
+    },
+    {
+      "id": "btc_010",
+      "title": "Bitcoin Consensus Rules",
+      "content": "Bitcoin operates on a set of consensus rules that all nodes enforce. Key rules include: maximum block size of 4MB (weight units), maximum supply of 21 million coins, 10-minute average block time, difficulty adjustment every 2016 blocks, and specific transaction validation rules. Changes to consensus rules require broad agreement among nodes, miners, and users. Soft forks (backward-compatible changes) like SegWit can activate with miner signaling. Hard forks (incompatible changes) require all nodes to upgrade and can result in chain splits if there's disagreement.",
+      "metadata": {
+        "source": "Bitcoin Protocol Rules",
+        "entities": ["consensus", "soft fork", "hard fork", "difficulty adjustment", "protocol"]
+      }
+    }
+  ]
+}

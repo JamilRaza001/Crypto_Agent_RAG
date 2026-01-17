@@ -1,0 +1,98 @@
+{
+  "category": "Ethereum",
+  "documents": [
+    {
+      "id": "eth_001",
+      "title": "Ethereum Introduction",
+      "content": "Ethereum is a decentralized blockchain platform created by Vitalik Buterin and launched in 2015. Unlike Bitcoin which is primarily a digital currency, Ethereum is a programmable blockchain that enables smart contracts and decentralized applications (dApps). Ethereum's native cryptocurrency is called Ether (ETH). The Ethereum Virtual Machine (EVM) executes smart contract code in a deterministic and secure manner. Ethereum pioneered the concept of a 'world computer' where anyone can deploy censorship-resistant applications.",
+      "metadata": {
+        "source": "Ethereum Foundation",
+        "author": "Vitalik Buterin",
+        "year": 2015,
+        "entities": ["Ethereum", "smart contract", "dApp", "EVM", "Ether", "Vitalik Buterin"]
+      }
+    },
+    {
+      "id": "eth_002",
+      "title": "Smart Contracts Explained",
+      "content": "Smart contracts are self-executing programs stored on the Ethereum blockchain. They automatically enforce and execute agreements when predetermined conditions are met, without intermediaries. Smart contracts are typically written in Solidity, a JavaScript-like programming language. Once deployed, smart contracts are immutable and run exactly as programmed. They enable trustless transactions, decentralized finance applications, NFTs, DAOs, and many other use cases. However, bugs in smart contracts can be exploited, as seen in the DAO hack of 2016.",
+      "metadata": {
+        "source": "Ethereum Smart Contract Guide",
+        "entities": ["smart contract", "Solidity", "immutable", "trustless", "DAO"]
+      }
+    },
+    {
+      "id": "eth_003",
+      "title": "Ethereum Virtual Machine (EVM)",
+      "content": "The Ethereum Virtual Machine is a quasi-Turing-complete state machine that executes smart contract bytecode. Every Ethereum node runs the EVM to maintain consensus on the state of the blockchain. The EVM uses 'gas' to measure computational work - each operation has a gas cost. Gas prevents infinite loops and spam by requiring users to pay for computation. The EVM is sandboxed and isolated from the main system, making it secure. Many other blockchains like Binance Smart Chain and Polygon are EVM-compatible, allowing developers to port Ethereum dApps easily.",
+      "metadata": {
+        "source": "Ethereum Technical Documentation",
+        "entities": ["EVM", "gas", "bytecode", "Turing-complete", "EVM-compatible"]
+      }
+    },
+    {
+      "id": "eth_004",
+      "title": "Ethereum Gas Fees",
+      "content": "Gas is the unit that measures computational work on Ethereum. Each transaction and smart contract operation requires gas. Users pay gas fees in ETH (Gwei, where 1 ETH = 1 billion Gwei). Gas fees = Gas Used × Gas Price. The gas price fluctuates based on network demand - during high congestion, users must pay more to get transactions processed quickly. EIP-1559, implemented in August 2021, reformed the fee market with a base fee that's burned (removed from circulation) and an optional priority fee (tip) for miners/validators. This made fees more predictable.",
+      "metadata": {
+        "source": "Ethereum Economics",
+        "entities": ["gas", "Gwei", "gas fee", "EIP-1559", "base fee", "priority fee"]
+      }
+    },
+    {
+      "id": "eth_005",
+      "title": "The Merge - Proof of Stake Transition",
+      "content": "On September 15, 2022, Ethereum transitioned from Proof of Work to Proof of Stake in an event called 'The Merge'. Instead of miners competing with computational power, validators stake 32 ETH to propose and attest to blocks. This reduced Ethereum's energy consumption by approximately 99.95%. Validators earn rewards for honest participation and can be slashed (lose staked ETH) for malicious behavior. The Merge maintained Ethereum's transaction history and didn't change gas fees directly, but set the foundation for future scalability upgrades.",
+      "metadata": {
+        "source": "Ethereum Foundation - The Merge",
+        "year": 2022,
+        "entities": ["The Merge", "Proof of Stake", "validator", "staking", "32 ETH", "slashing"]
+      }
+    },
+    {
+      "id": "eth_006",
+      "title": "Ethereum Accounts and Addresses",
+      "content": "Ethereum has two types of accounts: Externally Owned Accounts (EOAs) controlled by private keys, and Contract Accounts controlled by smart contract code. Ethereum addresses are 42-character hexadecimal strings starting with '0x'. EOAs can initiate transactions by signing with their private key. Contract accounts can only execute code in response to transactions. Every account has four fields: nonce (transaction count), balance (Wei amount), contract code (for contract accounts), and storage (contract state). Ethereum uses the same elliptic curve cryptography (secp256k1) as Bitcoin.",
+      "metadata": {
+        "source": "Ethereum Account Model",
+        "entities": ["EOA", "Contract Account", "address", "nonce", "Wei", "secp256k1"]
+      }
+    },
+    {
+      "id": "eth_007",
+      "title": "Ethereum Tokens - ERC-20",
+      "content": "ERC-20 is the technical standard for fungible tokens on Ethereum. It defines a common set of rules including transfer(), balanceOf(), approve(), and other functions. This standardization allows tokens to work seamlessly with wallets, exchanges, and dApps. Thousands of tokens follow the ERC-20 standard, including stablecoins like USDT and USDC, DeFi tokens like UNI and AAVE, and many others. Creating an ERC-20 token requires deploying a smart contract that implements the ERC-20 interface. Tokens are not coins - they exist as balances in smart contracts.",
+      "metadata": {
+        "source": "Ethereum Token Standards",
+        "entities": ["ERC-20", "token", "fungible", "USDT", "USDC", "token standard"]
+      }
+    },
+    {
+      "id": "eth_008",
+      "title": "Ethereum NFTs - ERC-721",
+      "content": "ERC-721 is the standard for non-fungible tokens (NFTs) on Ethereum. Unlike ERC-20 tokens where each unit is identical, each ERC-721 token is unique with its own metadata and value. NFTs can represent digital art, collectibles, gaming items, domain names (ENS), virtual real estate, and more. The token contains a unique tokenId and can store metadata on-chain or reference external storage like IPFS. Popular NFT marketplaces like OpenSea use ERC-721. ERC-1155 is a newer standard that supports both fungible and non-fungible tokens in a single contract.",
+      "metadata": {
+        "source": "Ethereum NFT Standards",
+        "entities": ["ERC-721", "NFT", "non-fungible", "tokenId", "ERC-1155", "OpenSea"]
+      }
+    },
+    {
+      "id": "eth_009",
+      "title": "Ethereum Layer 2 Solutions",
+      "content": "Layer 2 solutions scale Ethereum by processing transactions off the main chain (Layer 1) while inheriting its security. Optimistic Rollups (Optimism, Arbitrum) assume transactions are valid by default and use fraud proofs to catch invalid ones. Zero-Knowledge Rollups (zkSync, Starknet) use cryptographic proofs to validate batches of transactions. These rollups can process thousands of transactions per second with fees often 10-100x cheaper than Layer 1. State channels and Plasma are other Layer 2 approaches. Layer 2s are crucial for Ethereum's scaling roadmap.",
+      "metadata": {
+        "source": "Ethereum Scaling Solutions",
+        "entities": ["Layer 2", "Optimistic Rollup", "ZK Rollup", "Arbitrum", "Optimism", "zkSync"]
+      }
+    },
+    {
+      "id": "eth_010",
+      "title": "Ethereum Development Tools",
+      "content": "Ethereum has a rich ecosystem of development tools. Hardhat and Foundry are popular development frameworks for compiling, testing, and deploying smart contracts. Remix is a browser-based IDE for writing Solidity. Web3.js and Ethers.js are JavaScript libraries for interacting with Ethereum from web applications. Ganache provides a local blockchain for testing. OpenZeppelin offers audited, reusable smart contract libraries. Metamask is the most popular browser wallet for connecting to dApps. Infura and Alchemy provide node infrastructure so developers don't need to run their own nodes.",
+      "metadata": {
+        "source": "Ethereum Developer Resources",
+        "entities": ["Hardhat", "Remix", "Solidity", "Web3.js", "Metamask", "OpenZeppelin", "Infura"]
+      }
+    }
+  ]
+}

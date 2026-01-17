@@ -1,0 +1,95 @@
+{
+  "category": "Blockchain Basics",
+  "documents": [
+    {
+      "id": "blockchain_001",
+      "title": "What is Blockchain",
+      "content": "A blockchain is a distributed, immutable ledger that records transactions across a network of computers. Each block contains a cryptographic hash of the previous block, transaction data, and a timestamp, creating a chain. This structure makes it extremely difficult to alter historical data - changing one block would require changing all subsequent blocks. Blockchains are maintained by a network of nodes that validate and record transactions through consensus mechanisms. The technology enables trustless, transparent, and tamper-resistant record-keeping without a central authority.",
+      "metadata": {
+        "source": "Blockchain Fundamentals",
+        "entities": ["blockchain", "distributed ledger", "hash", "immutable", "consensus"]
+      }
+    },
+    {
+      "id": "blockchain_002",
+      "title": "Cryptographic Hashing",
+      "content": "Cryptographic hash functions are fundamental to blockchain security. A hash function takes input data of any size and produces a fixed-size output (hash). Key properties include: deterministic (same input always produces same output), fast to compute, one-way (impossible to reverse), avalanche effect (small input change drastically changes output), and collision-resistant (finding two inputs with same output is computationally infeasible). Bitcoin uses SHA-256, which produces 256-bit hashes. Hashes link blocks together, create addresses, and verify data integrity throughout blockchain systems.",
+      "metadata": {
+        "source": "Cryptography in Blockchain",
+        "entities": ["hash function", "SHA-256", "cryptography", "one-way function", "collision resistance"]
+      }
+    },
+    {
+      "id": "blockchain_003",
+      "title": "Public Key Cryptography",
+      "content": "Blockchains use public key cryptography (asymmetric encryption) for secure transactions. Each user has a key pair: a public key (shareable, like an email address) and a private key (secret, like a password). Messages encrypted with a public key can only be decrypted with the corresponding private key. Digital signatures work in reverse - signing with a private key creates a signature that anyone can verify using the public key. This proves the signer owns the private key without revealing it. In crypto, your private key is your identity - 'not your keys, not your coins'.",
+      "metadata": {
+        "source": "Blockchain Cryptography",
+        "entities": ["public key", "private key", "digital signature", "asymmetric encryption"]
+      }
+    },
+    {
+      "id": "blockchain_004",
+      "title": "Consensus Mechanisms",
+      "content": "Consensus mechanisms allow distributed nodes to agree on the blockchain state without a central authority. Proof of Work (PoW) requires miners to solve computational puzzles - used by Bitcoin. Proof of Stake (PoS) selects validators based on staked tokens - used by Ethereum post-Merge. Other mechanisms include Delegated Proof of Stake (DPoS), Proof of Authority (PoA), and Practical Byzantine Fault Tolerance (PBFT). Each has trade-offs between decentralization, security, and scalability (the 'blockchain trilemma'). Consensus mechanisms prevent double-spending and ensure all nodes maintain the same transaction history.",
+      "metadata": {
+        "source": "Consensus Algorithms",
+        "entities": ["consensus", "Proof of Work", "Proof of Stake", "DPoS", "Byzantine Fault Tolerance"]
+      }
+    },
+    {
+      "id": "blockchain_005",
+      "title": "Merkle Trees",
+      "content": "Merkle trees (hash trees) efficiently summarize and verify large sets of data. Transaction data is hashed in pairs repeatedly until a single hash remains - the Merkle root stored in the block header. This allows light clients to verify specific transactions without downloading the entire blockchain using Merkle proofs. If any transaction changes, the Merkle root changes, making tampering evident. Bitcoin and Ethereum use Merkle trees to organize transactions in blocks. This structure enables Simplified Payment Verification (SPV) for lightweight wallets.",
+      "metadata": {
+        "source": "Blockchain Data Structures",
+        "entities": ["Merkle tree", "Merkle root", "hash tree", "SPV", "Merkle proof"]
+      }
+    },
+    {
+      "id": "blockchain_006",
+      "title": "Blockchain Forks",
+      "content": "Blockchain forks occur when the blockchain splits into two paths. Soft forks are backward-compatible protocol changes where old nodes still recognize new blocks as valid (e.g., SegWit on Bitcoin). Hard forks are incompatible changes requiring all nodes to upgrade, potentially creating two separate chains if there's disagreement (e.g., Bitcoin Cash split from Bitcoin in 2017, Ethereum Classic from Ethereum in 2016). Temporary forks happen when two miners find blocks simultaneously, resolved when one chain becomes longer. Protocol forks can be contentious (disagreements) or planned upgrades.",
+      "metadata": {
+        "source": "Blockchain Governance",
+        "entities": ["fork", "soft fork", "hard fork", "Bitcoin Cash", "Ethereum Classic", "chain split"]
+      }
+    },
+    {
+      "id": "blockchain_007",
+      "title": "Blockchain Nodes",
+      "content": "Nodes are computers that maintain copies of the blockchain and participate in the network. Full nodes download and verify the complete blockchain, enforcing all consensus rules independently. They validate transactions, relay them to other nodes, and can mine or validate blocks. Archive nodes store the entire blockchain history including all state changes. Light nodes only download block headers and request data as needed, trusting full nodes for verification. Validator nodes (in PoS) are selected to propose and attest to new blocks. Mining nodes (in PoW) compete to solve puzzles and create blocks.",
+      "metadata": {
+        "source": "Blockchain Network Architecture",
+        "entities": ["node", "full node", "light node", "archive node", "validator", "mining node"]
+      }
+    },
+    {
+      "id": "blockchain_008",
+      "title": "Blockchain Scalability Trilemma",
+      "content": "The blockchain trilemma, coined by Vitalik Buterin, states that blockchains can only optimize two of three properties: decentralization, security, and scalability. Bitcoin prioritizes decentralization and security but has limited throughput (~7 tx/s). High-throughput chains like Solana sacrifice some decentralization for speed. Solutions to the trilemma include Layer 2 scaling (process transactions off-chain), sharding (split blockchain into parallel chains), and improved consensus algorithms. Ethereum's roadmap addresses this through rollups and eventual sharding. No blockchain has perfectly solved the trilemma - all involve trade-offs.",
+      "metadata": {
+        "source": "Blockchain Scalability",
+        "entities": ["trilemma", "scalability", "decentralization", "security", "sharding", "Vitalik Buterin"]
+      }
+    },
+    {
+      "id": "blockchain_009",
+      "title": "Blockchain Finality",
+      "content": "Finality is when a transaction is considered irreversible and permanently part of the blockchain. Probabilistic finality (Bitcoin, Ethereum PoW) means confidence increases with each confirmation but is never 100% - a longer chain could theoretically replace the current one. Bitcoin typically requires 6 confirmations for finality. Deterministic finality (some PoS systems) provides immediate, absolute finality once consensus is reached. Economic finality relies on the high cost of attacking the network making reversals economically infeasible. Instant finality is crucial for applications requiring immediate settlement.",
+      "metadata": {
+        "source": "Blockchain Transaction Finality",
+        "entities": ["finality", "probabilistic finality", "deterministic finality", "confirmation", "settlement"]
+      }
+    },
+    {
+      "id": "blockchain_010",
+      "title": "Permissioned vs Permissionless Blockchains",
+      "content": "Permissionless (public) blockchains like Bitcoin and Ethereum allow anyone to join, transact, and participate in consensus without approval. They prioritize censorship resistance and decentralization. Permissioned (private) blockchains restrict participation to authorized entities, common in enterprise use cases. Examples include Hyperledger Fabric and R3 Corda. Permissioned chains offer higher throughput, privacy, and regulatory compliance but sacrifice decentralization and trustlessness. Consortium blockchains are semi-permissioned, controlled by a group rather than one entity. The choice depends on use case - public for trustless applications, private for enterprise efficiency.",
+      "metadata": {
+        "source": "Blockchain Types",
+        "entities": ["permissionless", "permissioned", "public blockchain", "private blockchain", "Hyperledger", "consortium"]
+      }
+    }
+  ]
+}
