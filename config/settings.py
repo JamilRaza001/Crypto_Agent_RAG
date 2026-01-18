@@ -9,6 +9,10 @@ from typing import Optional
 from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+# Get the project root directory (parent of config folder)
+PROJECT_ROOT = Path(__file__).parent.parent
+ENV_FILE = PROJECT_ROOT / ".env"
+
 
 class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
@@ -31,12 +35,12 @@ class Settings(BaseSettings):
         default="sentence-transformers/all-MiniLM-L6-v2",
         alias="EMBEDDING_MODEL"
     )
-    gemini_model: str = Field(default="gemini-1.5-flash", alias="GEMINI_MODEL")
+    gemini_model: str = Field(default="gemini-2.5-flash", alias="GEMINI_MODEL")
     temperature: float = Field(default=0.1, alias="TEMPERATURE")
     max_tokens: int = Field(default=2048, alias="MAX_TOKENS")
 
     # RAG Settings
-    similarity_threshold: float = Field(default=0.7, alias="SIMILARITY_THRESHOLD")
+    similarity_threshold: float = Field(default=0.5, alias="SIMILARITY_THRESHOLD")
     top_k_results: int = Field(default=5, alias="TOP_K_RESULTS")
     chunk_size: int = Field(default=1000, alias="CHUNK_SIZE")
     chunk_overlap: int = Field(default=200, alias="CHUNK_OVERLAP")
@@ -54,7 +58,7 @@ class Settings(BaseSettings):
     log_level: str = Field(default="INFO", alias="LOG_LEVEL")
 
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=str(ENV_FILE),
         env_file_encoding="utf-8",
         case_sensitive=False,
         extra="ignore"

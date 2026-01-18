@@ -193,17 +193,18 @@ class ChromaManager:
             where=metadata_filter
         )
 
-        # ChromaDB returns distances (lower is more similar)
-        # Convert to similarity scores (1 - normalized_distance)
+        # ChromaDB returns squared L2 distances (lower is more similar)
+        # Convert to similarity scores: similarity = 1 - (distance / 2)
+        # This maps distance [0, 2] to similarity [1.0, 0.0]
         filtered_results = []
 
         if results['ids'] and len(results['ids'][0]) > 0:
             for i, doc_id in enumerate(results['ids'][0]):
                 distance = results['distances'][0][i]
 
-                # Convert distance to similarity (assuming L2 distance)
-                # Normalize and invert: similarity = 1 / (1 + distance)
-                similarity = 1 / (1 + distance)
+                # Convert squared L2 distance to similarity score
+                # For normalized embeddings, max distance is ~2
+                similarity = max(0, 1 - (distance / 2))
 
                 if similarity >= threshold:
                     filtered_results.append({

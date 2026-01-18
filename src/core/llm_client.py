@@ -35,10 +35,10 @@ class GeminiClient:
             },
             # Disable safety filters for crypto content (sometimes flagged)
             safety_settings={
-                "HARASSMENT": "BLOCK_NONE",
-                "HATE_SPEECH": "BLOCK_NONE",
-                "SEXUALLY_EXPLICIT": "BLOCK_NONE",
-                "DANGEROUS_CONTENT": "BLOCK_NONE",
+                "HARM_CATEGORY_HARASSMENT": "BLOCK_NONE",
+                "HARM_CATEGORY_HATE_SPEECH": "BLOCK_NONE",
+                "HARM_CATEGORY_SEXUALLY_EXPLICIT": "BLOCK_NONE",
+                "HARM_CATEGORY_DANGEROUS_CONTENT": "BLOCK_NONE",
             }
         )
 

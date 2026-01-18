@@ -26,7 +26,7 @@ def main():
     reset = False
     if len(sys.argv) > 1 and sys.argv[1] == '--reset':
         reset = True
-        print("⚠️  WARNING: Resetting existing knowledge base")
+        print("WARNING: Resetting existing knowledge base")
         response = input("Are you sure? (yes/no): ")
         if response.lower() != 'yes':
             print("Aborted")
@@ -41,9 +41,9 @@ def main():
         print("Knowledge Base Initialization Complete!")
         print("=" * 70)
         print()
-        print(f"📚 Total Documents: {stats['total_documents']}")
-        print(f"📄 Total Chunks: {stats['total_chunks']}")
-        print(f"🔢 Embedding Dimension: {stats['embedding_dimension']}")
+        print(f"Total Documents: {stats['total_documents']}")
+        print(f"Total Chunks: {stats['total_chunks']}")
+        print(f"Embedding Dimension: {stats['embedding_dimension']}")
         print()
         print("Category Breakdown:")
         for category, count in stats['category_breakdown'].items():
@@ -72,7 +72,7 @@ def main():
         ]
 
         for query in test_queries:
-            print(f"\n🔍 Query: '{query}'")
+            print(f"\nQuery: '{query}'")
             print("-" * 70)
 
             results = initializer.chroma_manager.search_with_threshold(
@@ -91,7 +91,7 @@ def main():
                 print("No results found")
 
         print("\n" + "=" * 70)
-        print("✅ Knowledge Base Ready!")
+        print("Knowledge Base Ready!")
         print("=" * 70)
         print()
         print("Next steps:")
@@ -101,7 +101,7 @@ def main():
 
     except Exception as e:
         print("\n" + "=" * 70)
-        print("❌ Error during initialization")
+        print("ERROR: Initialization failed")
         print("=" * 70)
         print(f"\nError: {e}")
         logger.exception("Knowledge base initialization failed")
