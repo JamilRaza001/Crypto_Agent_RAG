@@ -49,6 +49,30 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+def initialize_knowledge_base():
+    """Initialize knowledge base on first deployment if needed."""
+    import os
+    from config.settings import settings
+
+    # Check if ChromaDB exists
+    chroma_path = Path(settings.chroma_db_path)
+    chroma_sqlite = chroma_path / "chroma.sqlite3"
+
+    if not chroma_sqlite.exists():
+        st.info("🔄 First-time setup: Initializing knowledge base...")
+        st.info("This may take 2-3 minutes. Please wait...")
+
+        try:
+            # Import and run initialization
+            from scripts.init_kb import main as init_kb_main
+            init_kb_main()
+            st.success("✅ Knowledge base initialized successfully!")
+            st.rerun()
+        except Exception as e:
+            st.error(f"❌ Error initializing knowledge base: {e}")
+            st.stop()
+
+
 def initialize_session_state():
     """Initialize Streamlit session state."""
     if 'agent' not in st.session_state:
@@ -66,6 +90,9 @@ def initialize_session_state():
 
 def main():
     """Main application."""
+    # Initialize KB on first run (for cloud deployment)
+    initialize_knowledge_base()
+
     initialize_session_state()
 
     # Header

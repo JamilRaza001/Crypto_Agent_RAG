@@ -20,13 +20,13 @@ class Settings(BaseSettings):
     # API Keys
     gemini_api_key: str = Field(..., alias="GEMINI_API_KEY")
 
-    # Paths (Windows-compatible)
+    # Paths (cloud-compatible with relative paths as default)
     chroma_db_path: str = Field(
-        default="c:/Agentic AI SMIT/Projects/cyrpto agent/data/chromadb",
+        default="./data/chromadb",
         alias="CHROMA_DB_PATH"
     )
     sqlite_db_path: str = Field(
-        default="c:/Agentic AI SMIT/Projects/cyrpto agent/data/sqlite/metadata.db",
+        default="./data/sqlite/metadata.db",
         alias="SQLITE_DB_PATH"
     )
 

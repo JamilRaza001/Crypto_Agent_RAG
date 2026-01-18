@@ -42,9 +42,11 @@ ENV/
 # Data & Databases
 data/chromadb/*
 data/sqlite/*.db
-data/knowledge_base/processed/*
 !data/chromadb/.gitkeep
 !data/sqlite/.gitkeep
+# Keep knowledge base raw files for deployment
+# data/knowledge_base/raw/* are committed to repo
+data/knowledge_base/processed/*
 !data/knowledge_base/processed/.gitkeep
 
 # Logs
@@ -58,7 +60,10 @@ htmlcov/
 .tox/
 
 # Streamlit
-.streamlit/
+.streamlit/secrets.toml
+.streamlit/*.toml
+!.streamlit/config.toml
+!.streamlit/secrets.toml.example
 
 # Claude
 .claude/
